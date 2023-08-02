@@ -1,6 +1,6 @@
 :root {
-  --primary: #db7093;
-  --bg: #010101;
+  --primary: #fbff95;
+  --bg: #fff;
 }
 
 * {
@@ -20,7 +20,7 @@ hmtl {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #fff;
+  color: #000;
 }
 
 /* Navbar */
@@ -91,7 +91,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/border-bg.jpg");
+  background-image: url("../img/hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -105,11 +105,7 @@ body {
   width: 100%;
   height: 30%;
   bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(1, 1, 3, 1) 8%,
-    rgba(255, 255, 255, 0) 50%
-  );
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
 }
 
 .hero .content {
@@ -130,9 +126,10 @@ body {
 
 .hero .content p {
   font-size: 1.6rem;
+  color: #fff;
   margin-top: 1rem;
   line-height: 1.4;
-  font-weight: 100;
+  font-weight: 500;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
@@ -142,7 +139,7 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
-  color: #fff;
+  color: #000;
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -166,7 +163,7 @@ body {
 .about h2 span,
 .menu h2 span,
 .contact h2 span {
-  color: var(--primary);
+  color: #000;
 }
 
 .about .row {
@@ -178,7 +175,7 @@ body {
 }
 
 .about .row .about-img img {
-  width: 100%;
+  width: 90%;
 }
 
 .about .row .content {
@@ -187,14 +184,14 @@ body {
 }
 
 .about .row .content h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -212,8 +209,9 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 40%;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 .menu .row .menu-card .menu-card-tittle {
@@ -221,25 +219,55 @@ body {
 }
 
 /* Menu Section */
+#menu {
+  background-color: var(--primary);
+}
+
 .menu h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
 
+.menu h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #000;
+  background-color: #d0b674;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
 .menu p,
 .contact p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 60rem;
   margin: auto;
-  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.menu .row .menu-card .lihat-detail {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 1rem 5rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* Contact Section */
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #222;
+  background-color: #fff;
 }
 
 .contact .row .map {
@@ -248,7 +276,27 @@ body {
   object-fit: cover;
 }
 
-.contact .row form {
+.contact .row .order {
+  margin-left: 2rem;
+}
+
+.contact .row .order p {
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.contact .row .order .pesan {
+  margin-top: 0;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #000;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* .contact .row form {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
@@ -276,49 +324,41 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: #000;
   background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
-}
+} */
 
 /* Footer */
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0 3rem;
-  margin-top: 3rem;
+  padding: 2rem 0 3rem;
+  margin-top: 2rem;
 }
 
-footer .socials {
-  padding: 1rem 0;
+footer .logo .socmed {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 1rem;
 }
 
-footer .socials a {
-  color: #fff;
-  margin: 1rem;
+footer .logo .partner {
+  width: 150px;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 
-footer .socials a:hover,
-footer .links a:hover {
-  color: var(--bg);
-}
-
-footer .links {
-  margin-bottom: 1.4rem;
-}
-
-footer .links a {
-  color: #fff;
-  padding: 0.7rem 1rem;
+footer .pay .pay-method {
+  width: 100px;
+  margin-top: 5rem;
 }
 
 footer .credit {
-  font-size: 0.8rem;
-}
-
-footer .credit a {
-  color: var(--bg);
-  font-weight: 700;
+  font-size: 1rem;
+  margin-top: -1rem;
 }
 
 /* Media Querries */
