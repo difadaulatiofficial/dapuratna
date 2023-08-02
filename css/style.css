@@ -419,4 +419,12 @@ footer .credit {
   html {
     font-size: 55%;
   }
+
+  footer .logo .socmed {
+    width: 30px;
+  }
+
+  footer .logo .partner {
+    width: 80px;
+  }
 }
