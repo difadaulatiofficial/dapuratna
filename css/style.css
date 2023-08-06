@@ -235,7 +235,7 @@ li.dropdown {
 .menu h2,
 .contact h2 {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 60px;
   margin-bottom: 3rem;
 }
 
@@ -247,6 +247,7 @@ li.dropdown {
 .menu h2 span,
 .contact h2 span {
   color: #000;
+  font-size: 60px;
 }
 
 .about .row {
@@ -326,7 +327,7 @@ li.dropdown {
 .menu h2,
 span {
   color: #4c3931;
-  font-size: 5rem;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 5%;
   font-family: "Dancing Script", cursive;
@@ -546,6 +547,18 @@ footer .credit {
   .navbar img {
     width: 50%;
     margin-left: 5rem;
+  }
+
+  .about h2 span,
+  .menu h2 span,
+  .contact h2 span {
+    font-size: 40px;
+  }
+
+  .about h2,
+  .menu h2,
+  .contact h2 {
+    font-size: 40px;
   }
 
   footer .partner .partnership {
