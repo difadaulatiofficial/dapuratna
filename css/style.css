@@ -21,43 +21,26 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #000;
-  
 }
 
-.hub img{
+.hub img {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  z-index: 1;
+  z-index: 10;
   filter: drop-shadow(0 30px 25px #58555586);
   width: 5%;
 }
 
-.hub img:hover{
+.hub img:hover {
   translate: 1rem;
   transition: 0.5s;
 }
-
-/* info */
-/* #info{
-  padding: 5%;
-  background-color: #FBFF95;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-#info h1{
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Dancing Script', cursive;
-} */
-
-/* end info */
 
 /* Navbar */
 
 li.dropdown {
   display: inline-block;
-
 }
 
 .dropdown:hover .isi-dropdown {
@@ -65,12 +48,11 @@ li.dropdown {
   padding: 15px 11px;
   margin-top: 1px;
   line-height: 50px;
-  
 }
 
 .isi-dropdown a:hover {
-  color: white ;
-  background-color: #FBFF95;
+  color: white;
+  background-color: #fbff95;
   transition: 0.4s;
 }
 
@@ -82,12 +64,11 @@ li.dropdown {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 .isi-dropdown a {
-  color: #4C3931 !important;
-  /* translate: 0.5rem ;  */
+  color: #4c3931 !important;
+  /* translate: 0.5rem; */
 }
 
 .isi-dropdown a:hover {
@@ -97,9 +78,8 @@ li.dropdown {
   translate: 1rem;
 }
 
-
 .navbar {
-  background-color: #FBFF95;
+  background-color: #fbff95;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -108,27 +88,28 @@ li.dropdown {
   align-items: center;
   padding: 15px 50px;
   box-shadow: 0px 8px 16px 0px #58555533;
+  width: 100%;
+  height: 12%;
 }
 
-.navbar img{
-  padding-left: 5%;
+.navbar img {
+  /* padding-left: 5%; */
   width: 20%;
   filter: drop-shadow(0px 0px 5px white);
 }
 
-
-.navbar-nav ul{
+.navbar-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar-nav > ul > li{
+.navbar-nav > ul > li {
   float: left;
 }
 
 .navbar .navbar-nav li a {
-  color: #4C3931;
+  color: #4c3931;
   display: inline-block;
   font-size: 1.3rem;
   margin-right: 20px;
@@ -136,16 +117,16 @@ li.dropdown {
 }
 
 .navbar .navbar-nav a:hover {
-  color:  #d0b674;
+  color: #d0b674;
   transition: 0.4s;
-    border-radius: 50px;
+  border-radius: 5px;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.2rem solid var(--primary);
+  /* border-bottom: 0.2rem solid var(--primary); */
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -155,8 +136,8 @@ li.dropdown {
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
-  margin: 0 0.5rem;
+  color: #000;
+  /* margin: 0 0.5rem; */
 }
 
 .navbar .navbar-extra a:hover {
@@ -168,65 +149,63 @@ li.dropdown {
 }
 
 /* Hero Section */
-.hero {
-  min-height: 100vh;
+.slider {
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
-  background-image: url("../img/IMG-20230618-WA0114\(1\).jpg");
+  /* background-image: url("../img/hero1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
-
-.hero::after {
+.slider::after {
   content: "";
   display: block;
   position: absolute;
+  z-index: 5;
   width: 100%;
   height: 30%;
   bottom: 0;
   background: linear-gradient(0deg, #e0ca84d7 8%, #e0ca8400 50%);
 }
 
-
-.hero .content {
-  padding: 1.4rem 7%;
-  max-width: 60rem;
+.slider .slides .caption {
+  margin-top: 7rem;
 }
 
-.hero .content h1 {
-  font-family: 'Dancing Script', cursive;
+.slider .slides .caption h1 {
+  font-family: "Dancing Script", cursive;
   font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
 }
 
-.hero .content h1 span {
+.slider .caption h1 span {
   color: var(--primary);
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 0.2rem solid var(--primary);
 }
 
-.hero .content p {
+.slider .caption p {
   font-size: 1.6rem;
   color: #fff;
-  margin-top: 1rem;
+  margin-top: 4rem;
   line-height: 1.4;
   font-weight: 500;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-/* mix-blend-mode: difference; */
-.hero .content .cta {
-  margin-top: 1rem;
+.slider .caption .cta {
+  margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
-  color: #4C3931;
-  background-color: #FBFF95;
+  color: #4c3931;
+  background-color: #fbff95;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
@@ -238,29 +217,30 @@ li.dropdown {
   padding: 8rem 7% 1.4rem;
 }
 
-.about{
+.about {
   padding: 8rem 7% 1.4rem;
   background-color: white;
   padding-bottom: 20%;
 }
-.about h2,span{
+
+.about h2 {
   color: var(--primary);
   font-size: 60px;
   text-align: center;
   margin-bottom: 5%;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   border-bottom: 0.2rem solid var(--primary);
 }
-
-
-
-
 
 .menu h2,
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+}
+
+.menu h2 span {
+  border-bottom: 0.2rem solid var(--primary);
 }
 
 .about h2 span,
@@ -279,12 +259,11 @@ li.dropdown {
 
 .about .row .about-img {
   flex: 1 1 45rem;
-  
 }
 
 .about .row .about-img img {
   width: 90%;
-  border-radius:40% 0%;
+  border-radius: 40% 0%;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -311,7 +290,6 @@ li.dropdown {
   text-align: justify;
 }
 
-
 .menu .row {
   display: flex;
   flex-wrap: wrap;
@@ -336,24 +314,39 @@ li.dropdown {
 
 .menu .row .menu-card .menu-card-tittle {
   margin-top: 1rem auto 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 /* Menu Section */
 #menu {
-  background-color:#FBFF95;
+  background-color: #fbff95;
 }
 
-
-.menu h2,span{
-
-  color:#4C3931;
+.menu h2,
+span {
+  color: #4c3931;
   font-size: 5rem;
   text-align: center;
   margin-bottom: 5%;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
+
 .contact h2 {
-  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 0.2rem solid var(--primary);
+}
+
+.contact span {
+  color: var(--primary);
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: "Dancing Script", cursive;
 }
 
 .menu h3 {
@@ -363,12 +356,11 @@ li.dropdown {
   margin-bottom: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
-  color: #4C3931;
+  color: #4c3931;
   font-weight: bold;
-  background-color: #FBFF95;
+  background-color: #fbff95;
   border-radius: 50px;
   border-bottom: 0.2rem solid var(--primary);
-  /* box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
 }
 
 .menu p,
@@ -429,10 +421,15 @@ li.dropdown {
 
 /* Footer */
 footer {
-  background-color: #FBFF95;
+  background-color: #fbff95;
   text-align: center;
   padding: 2rem 0 3rem;
   margin-top: 2rem;
+}
+
+footer .partner .partnership {
+  width: 150px;
+  margin-bottom: 3rem;
 }
 
 footer .logo .socmed {
@@ -441,24 +438,17 @@ footer .logo .socmed {
   margin-right: 1rem;
 }
 
-footer .logo .partner {
-  width: 150px;
-  margin-right: 2rem;
-  margin-left: 1rem;
-}
-
 footer .pay .pay-method {
   width: 10%;
-  margin-top: 5rem;
-  filter:grayscale(100%);
+  margin-top: 4rem;
+  filter: grayscale(100%);
   opacity: 50%;
 }
 footer .pay .pay-method:hover {
- transition: 0.5s;
-  filter:grayscale(0%);
+  transition: 0.5s;
+  filter: grayscale(0%);
   opacity: 100%;
 }
-
 
 footer .credit {
   font-size: 1rem;
@@ -479,18 +469,12 @@ footer .credit {
     font-size: 62.5%;
   }
 
-  #hamburger-menu {
-    display: inline-block;
+  .navbar img {
+    width: 30%;
   }
 
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #fff;
-    width: 30rem;
-    height: 100vh;
-    transition: 0.3s;
+  #hamburger-menu {
+    display: inline-block;
   }
 
   .navbar .navbar-nav .active {
@@ -559,11 +543,20 @@ footer .credit {
     font-size: 55%;
   }
 
-  footer .logo .socmed {
-    width: 30px;
+  .navbar img {
+    width: 50%;
+    margin-left: 5rem;
   }
 
-  footer .logo .partner {
+  footer .partner .partnership {
     width: 80px;
+  }
+
+  footer .logo .socmed {
+    width: 20px;
+  }
+
+  footer .credit {
+    font-size: 50%;
   }
 }
