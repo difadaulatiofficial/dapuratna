@@ -104,6 +104,7 @@ li.dropdown {
   width: 20%;
   filter: drop-shadow(0px 0px 5px white);
   margin-top: 1.5%;
+
 }
 
 .navbar-nav ul {
@@ -257,6 +258,7 @@ table a img {
   margin-bottom: 5%;
   font-family: "Dancing Script", cursive;
   border-bottom: 0.2rem solid var(--primary);
+
 }
 
 .menu h2,
@@ -266,7 +268,7 @@ table a img {
   margin-bottom: 3rem;
 }
 
-.menu h2 span {
+.menu h2 {
   border-bottom: 0.2rem solid var(--primary);
 }
 
@@ -616,9 +618,26 @@ footer .partner .partnership {
   opacity: 60%;
 }
 
+footer .partner .partnership:hover {
+  transition: 0.5s;
+  opacity: 100%;
+}
+
+.logo {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+}
+
+.logo a {
+  flex-wrap: wrap;
+  color: #4c3931;
+}
+
 footer .logo .socmed {
   border-radius: 25px;
-  width: 50px;
+  width: 25%;
   margin-right: 1rem;
 }
 
@@ -779,8 +798,8 @@ footer .credit {
   }
 
 
-  footer .partner .partnership {
-    width: 20%;
+  .partnership {
+    width: 10%;
   }
 
   footer .logo .socmed a img {
@@ -803,4 +822,6 @@ footer .credit {
     translate: 0rem;
     transition: 0;
   }
+
+
 }
