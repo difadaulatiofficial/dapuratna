@@ -636,6 +636,7 @@ footer .pay .pay-method:hover {
 
 footer .credit p {
   font-size: 20px;
+  /* color: #4c3931; */
   margin-bottom: 2rem;
   font-family: "Poppins", sans-serif;
 }
@@ -775,11 +776,11 @@ footer .credit p {
   }
 
   #home .caption h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   #home .caption h1 span {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   #home .caption p {
