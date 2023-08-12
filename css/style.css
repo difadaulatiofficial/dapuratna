@@ -293,8 +293,17 @@ table a img {
 }
 
 .about .row .content h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 5%;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #fbff959f;
+  border-radius: 50px;
+  border-bottom: 0.2rem solid var(--primary);
+  /* box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
 }
 
 .about .row .content p {
