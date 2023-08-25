@@ -1,4 +1,4 @@
-.menu-sate {
+.fsd {
   background-color: #fff;
   margin-top: 60px;
   text-align: center;
@@ -7,21 +7,21 @@
   padding: 20px;
 }
 
-.row-sate {
+.row-fsd {
   background-color: #fbff95;
   padding: 30px 30px 30px 30px;
   border-radius: 50px;
 }
 
-.menu-sate h1 {
+.fsd h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   border-bottom: 0.2rem solid var(--primary);
   margin-bottom: 30px;
 }
 
-.menu-sate h2 {
+.fsd h2 {
   font-family: "Dancing Script", cursive;
   font-size: 30px;
   font-weight: bold;
@@ -31,7 +31,7 @@
   border-bottom: 0.2rem solid var(--primary);
 }
 
-.menu-sate .row-sate {
+.fsd .row-fsd {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -42,22 +42,20 @@
   align-items: center;
 }
 
-.menu-sate .row-sate .img-sate img {
+.fsd .row-fsd .img-fsd img {
   text-align: center;
-  border-radius: 50%;
+  border-radius: 10px 40%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   max-width: 70%;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  /* margin-top: 2rem; */
 }
 
-.menu-sate .row-sate .img-sate img:hover {
-  /* border-radius: 5px; */
-  border-radius: 10px 40%;
+.fsd .row-fsd .img-fsd img:hover {
+  border-radius: 40% 10px;
 }
 
-.menu-sate .content-sate {
+.fsd .content-fsd {
   font-size: 15px;
   flex: 1 1 35rem;
   font-weight: 500;
@@ -65,11 +63,11 @@
   text-align: center;
 }
 
-.menu-sate .content-sate p {
+.fsd .content-fsd p {
   text-align: justify;
 }
 
-.menu-sate .content-sate h3 {
+.fsd .content-fsd h3 {
   font-size: 17px;
   font-weight: 500;
   margin-top: 5%;
@@ -84,7 +82,6 @@
 }
 
 .btn-buy a {
-  /* margin-bottom: 3rem; */
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 20px;
@@ -109,25 +106,25 @@
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
-  .menu-sate h1 {
+  .fsd h1 {
     font-size: 60px;
   }
 
-  .menu-sate h2 {
+  .fsd h2 {
     font-size: 60px;
   }
 
-  .menu-sate .row-sate {
+  .fsd .row-fsd {
     display: flex;
     align-items: center;
   }
 
-  .menu-sate .row-sate .img-sate img {
+  .fsd .row-fsd .img-fsd img {
     /* max-width: 50%; */
     width: 800px;
   }
 
-  .menu-sate .row-sate .content-sate {
+  .fsd .row-fsd .content-fsd {
     font-size: 20px;
     padding: 0 15px;
     box-sizing: border-box;
@@ -136,7 +133,7 @@
     width: 70%;
   }
 
-  .menu-sate .content-sate h3 {
+  .fsd .content-fsd h3 {
     font-size: 25px;
   }
 }
