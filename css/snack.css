@@ -139,6 +139,124 @@ table a img {
     border-radius: 50%;
 }
 
+/* accordion */
+.accordion {
+    margin: auto;
+    /* width: 400px; */
+}
+
+.accordion input {
+    display: none;
+}
+
+.box {
+    position: relative;
+    background: white;
+    height: 64px;
+    transition: all 0.6s ease-in-out;
+    border-radius: 10px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+header.box {
+    background: #fbff95;
+    z-index: 5;
+    cursor: initial;
+    text-align: center;
+}
+
+header .box-title {
+    font-size: 30px;
+    color: #4c3931;
+    cursor: initial;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+}
+
+.box-title {
+    height: 64px;
+    color: #4c3931;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 1.4rem;
+    color: #4c3931;
+    display: none;
+    font-family: "Poppins";
+    padding-left: 3%;
+}
+
+.box-content ol {
+    padding-left: 3%;
+}
+
+.box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+input:checked+.box {
+    height: auto;
+    margin: 16px 0;
+}
+
+input:checked+.box .box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+input:checked+.box .box-content,
+input:checked+.box .box-close {
+    display: inline-block;
+}
+
+.arrows section .box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+}
+
+.arrows section .box-title:before {
+    position: absolute;
+    display: block;
+    content: "\203a";
+    font-size: 1.4rem;
+    left: 20px;
+    top: -2px;
+    transition: transform 0.15s ease-in-out;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+input:checked+section.box .box-title:before {
+    transform: rotate(90deg);
+}
+
+/* end accordion */
+
 /* Footer */
 
 footer {
@@ -370,7 +488,7 @@ footer .credit p {
 
 .klappertaart .row {
     display: flex;
-    background-color: #fbff95;
+    background-color: whitesmoke;
     padding: 5%;
     border-radius: 40px;
     box-shadow: 0px 8px 16px 0px #58555533;
@@ -405,7 +523,7 @@ footer .credit p {
     margin-bottom: 3rem;
     display: inline-block;
     font-weight: bold;
-    background-color: whitesmoke;
+    background-color: #fbff95;
     border-radius: 50px;
     border-bottom: 0.2rem solid var(--primary);
     /* box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
@@ -432,7 +550,7 @@ footer .credit p {
     padding: 1rem 3rem;
     font-size: 1.4rem;
     color: #4c3931;
-    background-color: whitesmoke;
+    background-color: #fbff95;
     border-radius: 0.5rem;
     border: 1px solid #fbff95;
     box-shadow: 3px 3px 5px rgba(1, 1, 3, 0.5);
@@ -444,7 +562,99 @@ footer .credit p {
     box-shadow: 0px 8px 16px 0px #58555533;
 }
 
+/* asin */
+#asin {
+    padding: 8rem 7% 1.4rem;
+    background-color: white;
+    padding-bottom: 20%;
+}
 
+.asin h2 {
+    color: #4c3931;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: "Dancing Script", cursive;
+    border-bottom: 0.2rem solid var(--primary);
+}
+
+.asin .row {
+    display: flex;
+    background-color: #fbff95;
+    padding: 5%;
+    border-radius: 40px;
+    box-shadow: 0px 8px 16px 0px #58555533;
+    align-items: center;
+}
+
+.asin .row .asin-img {
+    flex: 1 1 45rem;
+}
+
+.asin .row .asin-img img {
+    width: 80%;
+    border-radius: 40% 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.asin .row .asin-img img:hover {
+    border-radius: 0px;
+}
+
+.asin .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.asin .row .content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 5%;
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border-bottom: 0.2rem solid var(--primary);
+    /* box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
+}
+
+.asin .row .content h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.asin .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.btn-buy {}
+
+.btn-buy-asin a {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #4c3931;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid #fbff95;
+    box-shadow: 3px 3px 5px rgba(1, 1, 3, 0.5);
+
+}
+
+.btn-buy-asin a:hover {
+    transition: 0.3s;
+    box-shadow: 0px 8px 16px 0px #58555533;
+}
+
+/* end asin */
 @media (max-width: 758px) {
     html {
         font-size: 62.5%;
@@ -460,6 +670,9 @@ footer .credit p {
         object-fit: cover;
         object-position: center;
         padding-top: 8%;
+        border-radius: 20px;
+
+
     }
 
     .klappertaart .row .content {
@@ -486,11 +699,63 @@ footer .credit p {
         padding-left: 7%;
         padding-right: 7%;
         padding-bottom: 3%;
+        text-align: center;
     }
 
     .btn-buy {
         padding-bottom: 5%;
 
+    }
+
+    .asin .row {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .asin .row .asin-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+        padding-top: 8%;
+    }
+
+    .asin .row .content {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .asin h2 {
+        font-size: 4rem;
+        padding-bottom: 2%;
+    }
+
+    .asin .row .content h3,
+    h4 {
+        margin-top: 5%;
+        font-size: 1.5rem;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .asin .row .content p {
+        font-size: 1.6rem;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 3%;
+        text-align: center;
+    }
+
+    .accordion {
+        margin: 3%;
+    }
+
+    .box-content {
+        padding-left: 10%;
+    }
+
+    .box-content ol {
+        padding-left: 5%;
     }
 }
 

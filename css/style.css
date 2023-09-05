@@ -132,7 +132,7 @@ li.dropdown {
   padding: 0;
 }
 
-.navbar-nav > ul > li {
+.navbar-nav>ul>li {
   float: left;
 }
 
@@ -354,7 +354,7 @@ table a img {
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 50px;
   margin-bottom: 10%;
   box-shadow: 1px 0px 3px rgba(1, 1, 3, 0.5);
@@ -377,7 +377,8 @@ table a img {
 
 /* Menu Section */
 #menu {
-  background-color: #fbff95;
+  background-color: white;
+  /* background: linear-gradient(0deg, #fff, #fbff9583); */
 }
 
 .menu h2,
@@ -499,7 +500,8 @@ span {
 
 /* accordion */
 .accordion {
-  margin: auto;
+  /* margin: auto; */
+  margin: 10%;
   /* width: 400px; */
 }
 
@@ -541,6 +543,7 @@ header .box-title {
   cursor: initial;
   font-family: "Dancing Script", cursive;
   font-weight: bold;
+
 }
 
 .box-title {
@@ -553,6 +556,7 @@ header .box-title {
   font-family: "Poppins";
   font-size: 1.4rem;
   font-weight: bold;
+
 }
 
 .box-content {
@@ -562,7 +566,8 @@ header .box-title {
   color: #4c3931;
   display: none;
   font-family: "Poppins";
-  padding-left: 3%;
+  padding-left: 5%;
+  text-align: justify;
 }
 
 .box-content ol {
@@ -579,17 +584,17 @@ header .box-title {
   display: none;
 }
 
-input:checked + .box {
+input:checked+.box {
   height: auto;
   margin: 16px 0;
 }
 
-input:checked + .box .box-title {
+input:checked+.box .box-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.18);
 }
 
-input:checked + .box .box-content,
-input:checked + .box .box-close {
+input:checked+.box .box-content,
+input:checked+.box .box-close {
   display: inline-block;
 }
 
@@ -609,7 +614,7 @@ input:checked + .box .box-close {
   color: rgba(0, 0, 0, 0.54);
 }
 
-input:checked + section.box .box-title:before {
+input:checked+section.box .box-title:before {
   transform: rotate(90deg);
 }
 
@@ -757,6 +762,8 @@ footer .credit p {
     font-size: 2rem;
     padding-left: 7%;
     padding-right: 7%;
+    margin-left: 10%;
+
   }
 
   .about .row .content p {
@@ -907,5 +914,17 @@ footer .credit p {
 
   .customer .customer-img img {
     width: 35%;
+  }
+
+  .accordion {
+    margin: 3%;
+  }
+
+  .box-content {
+    padding-left: 10%;
+  }
+
+  .box-content ol {
+    padding-left: 5%;
   }
 }
