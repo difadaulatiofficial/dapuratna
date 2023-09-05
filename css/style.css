@@ -695,6 +695,11 @@ footer .credit p {
   font-size: 20px;
   padding: 0 20px;
   font-family: "Poppins", sans-serif;
+  color: #4c3931;
+}
+
+footer a {
+  color: #4c3931;
 }
 
 /* Media Querries */
