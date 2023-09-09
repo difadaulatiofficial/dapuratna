@@ -354,7 +354,7 @@ table a img {
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 50px;
   margin-bottom: 10%;
   box-shadow: 1px 0px 3px rgba(1, 1, 3, 0.5);
@@ -377,7 +377,7 @@ table a img {
 
 /* Menu Section */
 #menu {
-  background-color: #fbff95;
+  /* background-color: #fbff95; */
 }
 
 .menu h2,
@@ -913,6 +913,17 @@ footer a {
   .customer .customer-img img {
     width: 35%;
   }
+  .accordion {
+    margin: 3%;
+}
+
+.box-content {
+    padding-left: 10%;
+}
+
+.box-content ol {
+    padding-left: 5%;
+}
 }
 
 /* Navbar Responsive */
