@@ -35,14 +35,11 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  /* background-color: #fbff95; */
-  padding: 3rem 5%;
+  background-color: whitesmoke;
+  padding: 7%;
   border-radius: 40px;
   box-shadow: 0px 8px 16px 0px #58555533;
   align-items: center;
-  display: flex;
-  background-color: whitesmoke;
-  /* padding: 5%; */
 }
 
 .fsd .row-fsd .img-fsd img {
@@ -64,6 +61,7 @@
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .fsd .content-fsd p {
@@ -88,8 +86,9 @@
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
-  font-size: 20px;
+  font-size: 1.4rem;
   color: #4c3931;
+  /* font-weight: bold; */
   background-color: #fbff95;
   border-radius: 0.5rem;
   border: 1px solid #fbff95;
