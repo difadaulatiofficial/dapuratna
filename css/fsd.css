@@ -42,11 +42,15 @@
   align-items: center;
 }
 
+.fsd .row-fsd .img-fsd {
+  flex: 1 1 45rem;
+}
+
 .fsd .row-fsd .img-fsd img {
   text-align: center;
   border-radius: 10px 40%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  max-width: 70%;
+  width: 80%;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -123,12 +127,12 @@
 
   .fsd .row-fsd .img-fsd img {
     /* max-width: 50%; */
-    width: 800px;
+    width: 80%;
   }
 
   .fsd .row-fsd .content-fsd {
     font-size: 20px;
-    padding: 0 15px;
+    padding: 0 1rem;
     box-sizing: border-box;
     text-align: left;
     align-items: center;
