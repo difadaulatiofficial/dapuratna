@@ -37,6 +37,10 @@ body {
   transition: 0.5s;
 }
 
+.menu-card .desc-sate {
+  text-align: justify;
+}
+
 .customer {
   /* background: linear-gradient(0deg, #e0ca8400 1%, #fbff95d5 30%); */
   background: linear-gradient(0deg, #fbff95 1%, #fff 50%);
@@ -915,15 +919,15 @@ footer a {
   }
   .accordion {
     margin: 3%;
-}
+  }
 
-.box-content {
+  .box-content {
     padding-left: 10%;
-}
+  }
 
-.box-content ol {
+  .box-content ol {
     padding-left: 5%;
-}
+  }
 }
 
 /* Navbar Responsive */
